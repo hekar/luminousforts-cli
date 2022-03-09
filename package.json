@@ -27,7 +27,7 @@
     "@oclif/test": "^2",
     "@types/chai": "^4",
     "@types/lodash": "^4.14.179",
-    "@types/mocha": "^9.0.0",
+    "@types/mocha": "^9.1.0",
     "@types/node": "^16.9.4",
     "@types/prompts": "^2.0.14",
     "chai": "^4",
