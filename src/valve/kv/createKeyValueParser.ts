@@ -1,4 +1,4 @@
-import { KeyValueParser } from './KeyValueParser';
+import {KeyValueParser} from './KeyValueParser'
 export function createKeyValueParser(): KeyValueParser {
   return new KeyValueParser()
 }

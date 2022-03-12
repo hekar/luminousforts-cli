@@ -1,2 +1,2 @@
 export * from './createScanner'
-export * from './scanner'
+export * from './Scanner'

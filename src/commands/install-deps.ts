@@ -11,7 +11,7 @@ export default class InstallDeps extends Command {
   public async run(): Promise<void> {
     await this.parse(InstallDeps)
 
-    const installer = createInstaller();
+    const installer = createInstaller()
     await installer.install({
       title: 'Source SDK',
       steamAppId: appIds.sourceSdk,

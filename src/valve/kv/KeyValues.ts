@@ -15,9 +15,11 @@ export class KeyValues {
         const normalTagPath = `${tagPath}.`.replace(/^\./, '')
         for (const [key, value] of Object.entries(n.properties)) {
           const fullPath = normalTagPath + key
+          console.log(`setting path (${fullPath})`)
           set(acc, fullPath, value)
         }
 
+        console.log({n, children: n.children})
         for (const c of n.children) {
           q.unshift({n: c, tagPath: normalTagPath + c.tag})
         }

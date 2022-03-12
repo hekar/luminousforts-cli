@@ -1,12 +1,11 @@
 /* eslint-disable no-await-in-loop */
-import {exec} from 'child_process'
+import {exec} from 'node:child_process'
 import {Installer} from './Installer'
 import {InstallerParams} from './types'
 import * as prompts from 'prompts'
 
 export class GenericInstaller implements Installer {
   async install(params: InstallerParams): Promise<void> {
-
     let failedToInstall = false
     do {
       console.log(`starting... ${params.title}`)

@@ -1,6 +1,6 @@
 import {KeyValueNode} from './KeyValueNode'
-import {KeyValueParserState} from './KeyValueParserState';
-import { KeyValues } from './KeyValues';
+import {KeyValueParserState} from './KeyValueParserState'
+import {KeyValues} from './KeyValues'
 
 export class KeyValueParser {
   private readonly root: KeyValueNode;
@@ -19,37 +19,24 @@ export class KeyValueParser {
     let cur = this.root
     for (const line of lines) {
       state = this.conditionallyModifyState(line) ?? state
-      switch (state) {
-      case 'tag_name': {
+      if (state === 'tag_name') {
         const parent = cur
         // The root node has no tag or properties ignore it.
-        const tagName = line.trim()
+        const tagName = line.trim().replace(/^"/, '').replace(/"$/, '')
         if (tagName) {
           cur = new KeyValueNode(parent, tagName)
           parent.add(cur)
         }
-
-        break
-      }
-
-      case 'end_tag': {
+      } else if (state === 'end_tag') {
         if (cur.parent !== undefined) {
           cur = cur.parent
         }
-
-        break
-      }
-
-      case 'property': {
+      } else if (state === 'property') {
         const match = /\s*"(.*?)"\s+"(.*?)"\s*$/.exec(line)
         if (match) {
           const [, key, value] = match
           cur.properties[key] = value
         }
-
-        break
-      }
-      // No default
       }
     }
   }
@@ -57,20 +44,14 @@ export class KeyValueParser {
   private conditionallyModifyState(line: string): KeyValueParserState | undefined {
     if (/\s*{\s*/.test(line)) {
       return 'start_tag'
-    }
-
-    if (/\s*}\s*/.test(line)) {
+    } else if (/\s*}\s*/.test(line)) {
       return 'end_tag'
-    }
-
-    if (/\s*\w*$/.test(line) && !line.includes('"')) {
-      return 'tag_name'
-    }
-
-    if (/\s*"(.*?)"\s+"(.*?)"\s*$/.test(line)) {
+    } else if (/\s*"(.*?)"\s+"(.*?)"\s*$/.test(line)) {
       return 'property'
+    } else if (/\s*\w*$/.test(line) && line.includes('"')) {
+      return 'tag_name'
+    } else {
+      return undefined
     }
-
-    return undefined
   }
 }

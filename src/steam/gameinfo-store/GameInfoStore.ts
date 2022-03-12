@@ -1,4 +1,3 @@
 export class GameInfoStore {
-  constructor() {
-  }
+  constructor() {}
 }

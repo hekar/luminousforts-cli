@@ -1,0 +1,76 @@
+"Configs"
+{
+	"Games"
+	{
+		"Team Fortress 2"
+		{
+			"GameDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\team fortress 2\tf"
+			"hammer"
+			{
+				"TextureFormat"		"5"
+				"MapFormat"		"4"
+				"DefaultTextureScale"		"0.250000"
+				"DefaultLightmapScale"		"16"
+				"DefaultSolidEntity"		"func_detail"
+				"DefaultPointEntity"		"info_player_teamspawn"
+				"GameExeDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\team fortress 2"
+				"MapDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\sourcesdk_content\tf\mapsrc"
+				"CordonTexture"		"tools\toolsskybox"
+				"MaterialExcludeCount"		"0"
+				"GameExe"		"Z:\home\hr\.local\share\Steam\steamapps\common\team fortress 2\hl2.exe"
+				"BSP"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vbsp.exe"
+				"Vis"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vvis.exe"
+				"Light"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vrad.exe"
+				"BSPDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\team fortress 2\tf\maps"
+				"GameData0"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\tf.fgd"
+			}
+		}
+		"Day of Defeat: Source"
+		{
+			"GameDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\day of defeat source\dod"
+			"hammer"
+			{
+				"TextureFormat"		"5"
+				"MapFormat"		"4"
+				"DefaultTextureScale"		"0.250000"
+				"DefaultLightmapScale"		"16"
+				"DefaultSolidEntity"		"func_detail"
+				"DefaultPointEntity"		"info_player_allies"
+				"GameExeDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\day of defeat source"
+				"MapDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\sourcesdk_content\dod\mapsrc"
+				"CordonTexture"		"tools\toolsskybox"
+				"MaterialExcludeCount"		"0"
+				"GameExe"		"Z:\home\hr\.local\share\Steam\steamapps\common\day of defeat source\hl2.exe"
+				"BSP"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vbsp.exe"
+				"Vis"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vvis.exe"
+				"Light"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vrad.exe"
+				"BSPDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\day of defeat source\dod\maps"
+				"GameData0"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\dod.fgd"
+			}
+		}
+		"Counter-Strike: Source"
+		{
+			"GameDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\counter-strike source\cstrike"
+			"hammer"
+			{
+				"TextureFormat"		"5"
+				"MapFormat"		"4"
+				"DefaultTextureScale"		"0.250000"
+				"DefaultLightmapScale"		"16"
+				"DefaultSolidEntity"		"func_detail"
+				"DefaultPointEntity"		"info_player_terrorist"
+				"GameExeDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\counter-strike source"
+				"MapDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\sourcesdk_content\cstrike\mapsrc"
+				"CordonTexture"		"tools\toolsskybox"
+				"MaterialExcludeCount"		"0"
+				"GameExe"		"Z:\home\hr\.local\share\Steam\steamapps\common\counter-strike source\hl2.exe"
+				"BSP"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vbsp.exe"
+				"Vis"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vvis.exe"
+				"Light"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\vrad.exe"
+				"BSPDir"		"Z:\home\hr\.local\share\Steam\steamapps\common\counter-strike source\cstrike\maps"
+				"GameData0"		"Z:\home\hr\.local\share\Steam\steamapps\common\SourceSDK\bin\orangebox\bin\cstrike.fgd"
+			}
+		}
+	}
+	"SDKVersion"		"5"
+}

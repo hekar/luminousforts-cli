@@ -1,5 +1,3 @@
-import { GameInfoStore } from './GameInfoStore';
+import {GameInfoStore} from './GameInfoStore'
 
-export function createGameInfoStore(): GameInfoStore {
-
-}
+export function createGameInfoStore(): GameInfoStore {}
