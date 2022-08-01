@@ -28,7 +28,7 @@
     "@types/chai": "^4",
     "@types/lodash": "^4.14.179",
     "@types/mocha": "^9.0.0",
-    "@types/node": "^16.9.4",
+    "@types/node": "^16.11.47",
     "@types/prompts": "^2.0.14",
     "chai": "^4",
     "eslint": "^7.32.0",
